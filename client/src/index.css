@@ -1,0 +1,29 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-gap: 1px;
+  background-color: #ccc;
+  padding: 1px;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cell.selected {
+  background-color: #ffff99;
+}
+
+.move-buttons {
+  margin-top: 10px;
+}
+
+.move-buttons button {
+  margin-right: 5px;
+}
